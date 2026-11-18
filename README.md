@@ -20,6 +20,7 @@ All data used in this project is synthetic and AI-assisted. The results represen
 - Used Python to independently verify selected Orange findings and extend the analysis through regression diagnostics, confidence intervals, multicollinearity analysis, residual analysis, and influential-observation testing.
 - Reduced the preferred explanatory regression from eight to seven predictors after identifying substantial multicollinearity involving Labor Variance.
 - Developed a Tableau executive dashboard to translate the analytical results into a concise business-facing presentation.
+- Developed a five-page Streamlit application for interactive exploration, including responsive filters and KPIs, two fiscal-year animations, relationship analysis, and model diagnostics.
 
 ## Executive Dashboard
 
@@ -238,6 +239,27 @@ Supporting analyses such as Staffing Percent versus Drive Time Service Health an
 - [Staffing Percent vs. Drive Time Service Health](images/StaffingPercent_vs_DriveTimeServiceHealth.png)
 - [SCO Wait Time vs. Drive Time Service Health](images/SCOWaitTime_vs_DriveTimeServiceHealth.png)
 
+## Interactive Streamlit Application
+
+The completed Streamlit application extends the project from static reporting into interactive exploration. Rather than recreating the Tableau executive dashboard, the app lets a user filter, animate, and investigate the underlying synthetic data and saved model evidence.
+
+The application contains five pages:
+
+- **Executive Overview** with Fiscal Year, Retail Event, Day of Week, and Day Type filters; six responsive KPI cards; and a selectable interactive Drive Time performance trend.
+- **Retail Event Explorer** with an animated 2021-2025 Retail Event comparison for Sales per Operating Hour, Transactions, Average Basket, and Drive Time Service Health, plus event-level KPI details.
+- **Relationship Explorer** with an animated Staffing Percent versus Drive Time Service Health scatterplot by Fiscal Year and an interactive SCO Wait Time companion analysis.
+- **Model Results** with preferred-model KPIs, regression coefficients and 95% confidence intervals, model comparison, VIF diagnostics, and the saved residual and Q-Q diagnostic plots.
+- **About the Project** with the Drive Time concept, project purpose, analytical workflow, tools, key analytical lesson, and synthetic-data disclaimer.
+
+The two animations serve different analytical purposes: Retail Event performance shows how event-level business measures change by fiscal year, while the staffing relationship animation shows how the Staffing Percent and Drive Time Service Health point cloud changes across the five-year dataset.
+
+**Streamlit source:**
+- [Application entrypoint](streamlit/app.py)
+- [Application pages](streamlit/pages/)
+- [Deployment requirements](streamlit/requirements.txt)
+
+A public deployment link will be added after the application is deployed.
+
 ## Key Findings
 
 ### Raw coverage quantity did not explain customer outcomes well
@@ -290,7 +312,7 @@ The findings therefore should not be interpreted as proof of cause and effect. I
 - GitHub
 - Microsoft Copilot
 
-Streamlit is planned as the next project phase.
+Streamlit has been completed as the interactive exploration phase of the project.
 
 ## Repository Structure
 
@@ -325,6 +347,11 @@ DriveTime-Analytics/
 |   └── DriveTime_Analytics_Executive_Dashboard.twbx
 |
 └── streamlit/
+    ├── app.py
+    ├── requirements.txt
+    ├── data/
+    ├── outputs/
+    └── pages/
 ```
 
 ## Project Documentation
@@ -338,9 +365,7 @@ The journal is intentionally more detailed than this README. The README provides
 
 ## Next Phase
 
-The next planned phase is development of an interactive Streamlit application.
-
-The `streamlit/` portion of the repository is intentionally empty at this stage rather than being represented as completed work.
+The interactive Streamlit application has been completed and staged for deployment. After deployment, the live application URL will be added to this README.
 
 ## Data Disclaimer
 
