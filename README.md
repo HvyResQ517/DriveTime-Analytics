@@ -5,6 +5,7 @@ An end-to-end retail analytics portfolio project exploring the operational facto
 ## Live Interactive Application
 
 Launch the Drive Time Analytics Streamlit app
+
 (https://drivetime-analytics.streamlit.app/)
 
 Explore the five-year synthetic retail dataset through interactive filters, responsive KPIs, two fiscal-year animations, relationship exploration, and model diagnostics.
