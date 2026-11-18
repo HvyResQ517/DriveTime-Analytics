@@ -2,6 +2,13 @@
 
 An end-to-end retail analytics portfolio project exploring the operational factors associated with customer experience and business performance during peak shopping hours.
 
+## Live Interactive Application
+
+Launch the Drive Time Analytics Streamlit app
+Add live Streamlit application link
+
+Explore the five-year synthetic retail dataset through interactive filters, responsive KPIs, two fiscal-year animations, relationship exploration, and model diagnostics.
+
 ## Project Overview
 
 Drive Time Analytics is a fictional retail analytics environment I developed to practice the full analytical process, from data validation and exploratory analysis through predictive modeling, statistical diagnostics, and executive dashboard development.
@@ -258,7 +265,7 @@ The two animations serve different analytical purposes: Retail Event performance
 - [Application pages](streamlit/pages/)
 - [Deployment requirements](streamlit/requirements.txt)
 
-A public deployment link will be added after the application is deployed.
+Live application: https://drivetime-analytics.streamlit.app
 
 ## Key Findings
 
@@ -365,7 +372,11 @@ The journal is intentionally more detailed than this README. The README provides
 
 ## Next Phase
 
-The interactive Streamlit application has been completed and staged for deployment. After deployment, the live application URL will be added to this README.
+The interactive Streamlit application is deployed and publicly accessible at:
+
+https://drivetime-analytics.streamlit.app
+
+The GitHub repository contains the completed analytical artifacts and application source.
 
 ## Data Disclaimer
 
